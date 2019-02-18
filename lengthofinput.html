@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>
+  Length of input in a field
+</title>
+</head>
+<body>
+    <h1> Calculating length of input text</h1>
+<input type="text">
+<span id="length">0</span>
+</body>
+<script>
+    var field = document.querySelector("input");
+    var output = document.querySelector("#length");
+    field.addEventListener("input",function(){
+output.textContent = field.value.length;
+    });
+    </script>
+</html>
