@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <style>
+            #table1{
+                margin-left: 10px;
+                margin-top:20px;
+                position: absolute;
+            }
+            #table2{
+                margin-left: 500px;
+                margin-top:20px; 
+                position:absolute;
+            }
+            #btn1{
+position:absolute;
+margin-left:300px;
+margin-top:30px;
+            }
+            #btn2{
+position:absolute;
+margin-left:250px;
+margin-top:30px;
+            }
+        </style>
+        <title>
+            Switching Positions
+        </title>
+    </head>
+    <body>
+        <div id="table1">
+                <input id="item1"  type="text" value="item1"> <br/>
+                <input type="text" value="item2" id="item2"> <br/>
+                <input type="text" value="item3" id="item3"> <br/>
+                <input type="text" value="item4" id="item4"> <br/>
+                <input type="text" value="item5" id="item5"> <br/>
+        </div>
+        <button id="btn1" onclick="right.moveright()" type="button" style="position:absolute">-></button>
+        <button id="btn2" onclick="left.moveleft()"type="button " style="position: absolute"><-</button>
+        <div id="table2">
+                <input type="text" value="item6" id="item6"> <br/>
+                <input type="text" value="item7" id="item7"> <br/>
+                <input type="text" value="item8" id="item8"> <br/>
+                <input type="text" value="item9" id="item9"> <br/>
+                <input type="text" value="item10" id="item10"> <br/>
+        </div>
+        <script>
+            var item1 = document.getElementById("item1");
+            var item2 = document.getElementById("item2");
+            var item3 = document.getElementById("item3");
+            var item4 = document.getElementById("item4");
+            var item5 = document.getElementById("item5");
+            var item6 = document.getElementById("item6");
+        var item7 = document.getElementById("item7");
+            var item8 = document.getElementById("item8");
+            var item9 = document.getElementById("item9");
+            var item10 = document.getElementById("item10");
+
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+
+function move(left,right){
+    this.left = left;
+    this.right = right;
+}
+move.prototype.moveleft = function(){
+if(this.left==1 && this.right == 0){
+   item1.addEventListener("select",function(){
+item1.style.color = 'red';
+btn2.addEventListener("click",function(){
+        item1.style.marginLeft=0;
+item1.style.marginTop=0;
+    });
+   });
+        
+
+    item2.addEventListener("select",function(){
+        item2.style.color="red";
+        btn2.addEventListener("click",function(){
+        item2.style.marginLeft=0;
+item2.style.marginTop=0;
+
+    });
+
+
+    });
+    item6.addEventListener('select',function(){
+item6.style.color = 'red';
+btn2.addEventListener("click",function(){
+   
+    item6.style.marginLeft= -490;
+item6.style.marginTop=110;
+
+});
+    });
+    item7.addEventListener('select',function(){
+item7.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item7.style.marginLeft= -490;
+item7.style.marginTop=110;
+});
+    });
+    item8.addEventListener('select',function(){
+item8.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item8.style.marginLeft= -490;
+item8.style.marginTop=110;
+});
+    });
+    item3.addEventListener('select',function(){
+item3.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item3.style.marginLeft=0;
+item3.style.marginTop=0;
+});
+    });
+    item4.addEventListener('select',function(){
+item4.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item4.style.marginLeft=0;
+item4.style.marginTop=0;
+});
+    });
+    item5.addEventListener('select',function(){
+item5.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item5.style.marginLeft=0;
+item5.style.marginTop=0;
+});
+    });
+    item9.addEventListener('select',function(){
+item9.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item9.style.marginLeft= -490;
+item9.style.marginTop=110;
+});
+    });
+    item10.addEventListener('select',function(){
+item10.style.color = 'red';
+btn2.addEventListener("click",function(){
+    item10.style.marginLeft= -490;
+item10.style.marginTop=110;
+});
+    });
+}
+}
+move.prototype.moveright = function(){
+    if(this.left ==0 && this.right==1){
+
+    item1.addEventListener("select",function(){
+        item1.style.color='red';
+        btn1.addEventListener("click",function(){
+    item1.style.marginLeft=495;
+item1.style.marginTop=105;
+item1.style.color="red";
+
+
+
+});
+    });
+item2.addEventListener("select",function(){
+    item2.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item2.style.marginLeft=495;
+    item2.style.marginTop = 110;
+});
+});
+item3.addEventListener("select",function(){
+    item3.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item3.style.marginLeft=495;
+    item3.style.marginTop = 115;
+});
+});
+item4.addEventListener("select",function(){
+    item4.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item4.style.marginLeft=495;
+    item4.style.marginTop = 120;
+});
+});
+item5.addEventListener("select",function(){
+    item5.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item5.style.marginLeft=495;
+    item5.style.marginTop = 125;
+});
+});
+item6.addEventListener("select",function(){
+    item6.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item6.style.marginLeft=400;
+    item6.style.marginTop = 110;
+});
+});
+item7.addEventListener("select",function(){
+    item7.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item7.style.marginLeft=495;
+    item7.style.marginTop = 110;
+});
+});
+item8.addEventListener("select",function(){
+    item8.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item8.style.marginLeft=495;
+    item8.style.marginTop = 110;
+});
+});
+item9.addEventListener("select",function(){
+    item9.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item9.style.marginLeft=495;
+    item9.style.marginTop = 110;
+});
+});
+item10.addEventListener("select",function(){
+    item10.style.color = 'red';
+    btn1.addEventListener("click",function(){
+    item10.style.marginLeft=495;
+    item10.style.marginTop = 110;
+});
+});
+}
+}
+
+var right = new move(0,1);
+var left = new move(1,0);
+
+
+        </script>
+    </body>
+</html>
