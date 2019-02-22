@@ -5,7 +5,7 @@ this.name = name;
 var user = new User();
 User.prototype.compare = function(user){
 
-if(this.age > u2.age){
+if(this.age > user.age){
 console.log(this.name + ' is older than ' + user.name);
 }else {
 console.log(user.name + ' is older than '+ this.name);
