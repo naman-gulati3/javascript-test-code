@@ -5,14 +5,15 @@ class User{
     }
    
 }
-var user1 = new User(21,'Naman');
-var user2 = new User (27,'xyz');
-   function compare(){
-   if(user1.age > user2.age ){
-   console.log(`${user1.name} aged ${user.age} is older than ${user2.name} aged ${user2.age}`);
+var u1 = new User;
+var u2 = new User;
+  var compare = function(u1,u2){
+   if(u1.age > u2.age ){
+   console.log(`${u1.name} aged ${u1.age} is older than ${u2.name} aged ${u2.age}`);
    }else{
-   console.log(`${user2.name} aged ${user2.age} is older than ${user1.name} aged ${user1.age}`);
+   console.log(`${u2.name} aged ${u2.age} is older than ${u1.name} aged ${u1.age}`);
    }
    }
-   
-   user1.compare(user2);
+   var user1 = new User(21,'Naman');
+var user2 = new User (27,'xyz');
+compare(user1,user2);
